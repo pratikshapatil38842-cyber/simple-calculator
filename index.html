@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b18">
+  <title>Nova | Smart Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Nova Calculator home">
+        <span class="brand-icon">✳</span>
+        <span>NOVA<span class="brand-dot">.</span></span>
+      </a>
+      <span class="live-label"><span class="live-dot"></span> READY TO CALCULATE</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">YOUR EVERYDAY MATH COMPANION</p>
+      <h1>Numbers, made <span>beautiful.</span></h1>
+      <p class="subtitle">Simple calculations. Brilliant experience.</p>
+    </section>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="calc-top">
+        <div>
+          <p class="mini-label">NOVA CALCULATOR</p>
+          <p class="mode">Standard mode <span>•</span> Basic arithmetic</p>
+        </div>
+        <div class="orb">✳</div>
+      </div>
+
+      <div class="screen">
+        <p id="history" class="history" aria-live="polite">Ready for your first calculation</p>
+        <input id="display" type="text" value="0"
+          readonly aria-label="Calculator result">
+        <p id="message" class="message" aria-live="polite"></p>
+      </div>
+
+      <div class="buttons">
+        <button class="utility" data-action="clear">AC</button>
+        <button class="utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="utility" data-action="sign">+/−</button>
+        <button class="operator" data-operator="/">÷</button>
+
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button class="operator" data-operator="*">×</button>
+
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button class="operator" data-operator="-">−</button>
+
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button class="operator" data-operator="+">+</button>
+
+        <button class="utility" data-action="decimal">.</button>
+        <button data-number="0">0</button>
+        <button class="equals" data-action="calculate">=</button>
+      </div>
+
+      <footer class="calc-footer">
+        <span><span class="live-dot"></span> Designed for clarity</span>
+        <span>v1.0</span>
+      </footer>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <span class="feature-icon">✦</span>
+        <div><h3>Fast & simple</h3><p>Calculate in seconds.</p></div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">◇</span>
+        <div><h3>Smart handling</h3><p>Errors handled gracefully.</p></div>
+      </div>
+      <div class="feature">
+        <span class="feature-icon">▣</span>
+        <div><h3>Mobile ready</h3><p>Works on every screen.</p></div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>CRAFTED WITH <span>♥</span> USING HTML · CSS · JAVASCRIPT</p>
+      <p>© 2026 NOVA CALCULATOR</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
